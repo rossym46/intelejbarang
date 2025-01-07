@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>inventoribarang</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>inventoribarang</name>
+
+  <properties>
+    <maven.compiler.source>23</maven.compiler.source> <!-- Menggunakan JDK 23 -->
+    <maven.compiler.target>23</maven.compiler.target> <!-- Menggunakan JDK 23 -->
+  </properties>
+
+  <dependencies>
+    <!-- JavaFX Controls -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>23</version> <!-- Versi JavaFX 23 -->
+    </dependency>
+
+    <!-- JavaFX FXML -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>23</version> <!-- Versi JavaFX 23 -->
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- JavaFX Maven Plugin untuk menjalankan aplikasi -->
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.10</version> <!-- Versi plugin JavaFX untuk Maven -->
+        <configuration>
+          <mainClass>com.example.inventoribarang.Main</mainClass> <!-- Sesuaikan dengan kelas utama -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
